@@ -1,0 +1,23 @@
+body {font-family:"Arial";}
+h1{font-style:italic;}
+.new-section .section-header h1 { color:blue;}
+#lists h1 {color:red;}
+.navigation-card {
+	width: 150px;
+        height:	150px;
+	background-image: url('../images/star.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#profile-image {
+	width: 200px;
+	height: 200px;
+	background-image: url('../images/profile-picture.jpg');
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 5px solid #cccccc;
+	border-radius: 50%;
+
+}
