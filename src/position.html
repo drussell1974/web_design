@@ -1,19 +1,18 @@
-<!doctype html>
+<!doctype html5>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/css_3.css" />
 		<style>
 			div {
 				margin: 15px;
+				padding: 10px;
 				border:5px solid #000;
 			}
 			div.parent {
 				background-color: #ff0000;
-				height: 500px;
 			}
 			div.child {
 				background-color: #0000ff;
-				bottom: 10px;
 			}
 		</style>
 	</head>
@@ -24,9 +23,9 @@
 				<option value="absolute">position: absolute</option>
 				<option value="fixed">position: fixed</option>
 				<option value="relative">position: relative</option>
-				<option value="static">position: static</option>
+				<option value="static" selected>position: static</option>
 				<option value="sticky">position: sticky</option>
-				<option value="initial">position: initial</option>
+				<option value="initial" selected>position: initial</option>
 				<option value="unset">position: unset</option>
 			</select>
 		</fieldset>
@@ -36,24 +35,27 @@
 				<option value="absolute">position: absolute</option>
 				<option value="fixed">position: fixed</option>
 				<option value="relative">position: relative</option>
-				<option value="static">position: static</option>
+				<option value="static" selected>position: static</option>
 				<option value="sticky">position: sticky</option>
-				<option value="initial">position: initial</option>
+				<option value="initial" selected>position: initial</option>
 				<option value="unset">position: unset</option>
 			</select>
 		</fieldset>
-		<div class="absolute-with-relative">
-			<h1>Outer Container</h1>
+		<div class="grandparent" style="position:initial">
+			<h1>GrandParent Div</h1>
 			<div class="parent">
-				<h1>Parent</h1>
+				<h1>Parent Div</h1>
 				<div class="child">
-					<h1>Child</h1>
+					<h1>Child Div</h1>
 				</div>
 			</div>
 		</div>
 		<script>
+			/* update the position of parent, when the parent drop down changes */
 			par = document.getElementById("parent");
 			par.addEventListener("change", updatePosition);
+			
+			/* update the position of the child, when the child drop down changes */
 			chd = document.getElementById("child")
 			chd.addEventListener("change", updatePosition);
 			
