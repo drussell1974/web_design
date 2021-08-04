@@ -11,6 +11,7 @@ h1{font-style:italic;}
 }
 
 #profile-image {
+	float: right;	
 	width: 200px;
 	height: 200px;
 	background-image: url('../images/profile-picture.jpg');
@@ -19,40 +20,17 @@ h1{font-style:italic;}
 	background-position: center;
 	border: 5px solid #cccccc;
 	border-radius: 50%;
-
 }
-.col {
-	background-color: red;
-	width: 50px;
-	margin: 20px;
+#nav-bar {
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	font-color: white;
 }
-.parent {
-	width: 500px;
-	border: 50 solid #000;
+#nav-bar ul {
+	list-style-type:none;
 }
-#col1 {
-	height:500px;
+#nav-bar ul li {
 	float: left;
-}
-#col2 {
-	height: 400px;
-	float: left;
-}
-#col3 {
-	height: 300px;
-	float: left;
-}
-#col4 {
-	height: 200px;
-	float: right;
-}
-#col5 {
-	height: 100px;
-	float: right;
-}
-#text1 {
-	clear: right;
-}
-#text2 {
-	clear: both;
+	margin: 5px 5px;
 }

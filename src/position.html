@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/css_3.css" />
+		<style>
+			div {
+				margin: 15px;
+				border:5px solid #000;
+			}
+			div.parent {
+				background-color: #ff0000;
+				height: 500px;
+			}
+			div.child {
+				background-color: #0000ff;
+				bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<label>Parent</label>
+			<select id="parent">
+				<option value="absolute">position: absolute</option>
+				<option value="fixed">position: fixed</option>
+				<option value="relative">position: relative</option>
+				<option value="static">position: static</option>
+				<option value="sticky">position: sticky</option>
+				<option value="initial">position: initial</option>
+				<option value="unset">position: unset</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<label>Child</label>
+			<select id="child">
+				<option value="absolute">position: absolute</option>
+				<option value="fixed">position: fixed</option>
+				<option value="relative">position: relative</option>
+				<option value="static">position: static</option>
+				<option value="sticky">position: sticky</option>
+				<option value="initial">position: initial</option>
+				<option value="unset">position: unset</option>
+			</select>
+		</fieldset>
+		<div class="absolute-with-relative">
+			<h1>Outer Container</h1>
+			<div class="parent">
+				<h1>Parent</h1>
+				<div class="child">
+					<h1>Child</h1>
+				</div>
+			</div>
+		</div>
+		<script>
+			par = document.getElementById("parent");
+			par.addEventListener("change", updatePosition);
+			chd = document.getElementById("child")
+			chd.addEventListener("change", updatePosition);
+			
+			function updatePosition(e) {
+				elems = document.getElementsByClassName(e.target.id);
+				for(var i = 0; i < elems.length; i++) {
+					elems[i].style.position = e.target.value;
+				};
+			}
+		</script>
+	</body>
+</html>
+
