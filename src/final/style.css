@@ -46,6 +46,23 @@ a:active, a:hover {
 	font-weight: bold;
 }
 
+#quick-menu {
+	position: fixed;
+	z-index: 2;
+	top: 60px;
+	left: 20px;
+	width: 200px;
+	height: auto;
+	background: white;
+	padding: 20px 10px;
+}
+
+#quick-menu h3 {
+	margin-top: 0px;
+	text-align: center;
+	color: #333;
+	font-size: 18px;
+}
 #header {
 	width: 100%;
 	height: 250px;
@@ -84,13 +101,45 @@ a:active, a:hover {
         width: 100%;
 }
 
-#introduction {
+.section {
 	width: 600px;
 	padding: 20px;
 	background: white;
 	border: 1px solid #ccc;
 	margin: 20px auto;
 	border-radius: 10px;
+}
+
+.example {
+	padding: 10px;
+	background: #fcfcfc;
+	border-radius: 10px;
+}
+
+table, dl {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table, td, th, dl, dt, dd {
+	border: 1px solid #ccc;
+}
+
+.code-show-button {
+	display: block;
+	margin: 10px auto 0px;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: none;
+	background: #1998E2;
+	color: #fff;
+	text-size: 14;
+}
+
+.code-show-button:hover {
+	color: #198acc;
+	cursor: pointer;
 }
 
 h1 {

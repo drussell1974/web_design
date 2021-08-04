@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>How to build a website - HTML</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="navigation">
+			<div id="navigation-inside">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="html.html" class="active">HTML</a></li>
+					<li><a href="css.html">CSS</a></li>
+					<li><a href="javascript.html">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="quick-menu">
+			<h3>Quick menu</h3>
+			<ul>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#definition-list">Definition list</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<div id="profile">
+				<div id="profile-image">
+					<img src="img/headshot.jpg" alt="head shot" />
+				</div>
+				<h2>Dave Russell</h2>
+			</div>
+		</div>
+		<div id="introduction" class="section">
+			<h1>HTML</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor massa, 
+			consectetur vel risus sit amet, rutrum fermentum augue. Suspendisse vel ante ac nibh 
+			porta porttitor. Donec varius sapien nec sollicitudin ultrices. Suspendisse fringilla 
+			lectus id tincidunt sollicitudins. Pellentesque habitant morbi tristique senectus et 
+			netus et malesuada fames ac turpis egestas. Sed hendrerit quam et accumsan tincidunt. 
+			Etiam commodo, augue sed facilisis condimentum, ante tellus luctus metus, sit amet 
+			placerat sapien massa vitae tortor. 
+			</p>
+		</div>
+		<div id="tables" class="section">
+			<h1>Tables</h1>
+			<p>Integer hendrerit, lorem sed semper feugiat, nibh leo sollicitudin neque, nec 
+			feugiat ex sem a ante. Mauris varius molestie quam, quis tempus lorem dictum at. 
+			Nullam ante enim, efficitur vehicula purus sit amet, blandit consectetur nunc. 
+			</p>
+			<div class="example">
+				<table>
+					<tr>
+						<th>Term</th>
+						<th>Defintion</th>
+					</tr>
+					<tr>
+						<td>div</td>
+						<td>Section/container <i>block-level element</i></td>
+					</tr>
+					<tr>
+						<td>p</td>
+						<td>Paragraph <i>block-level element</i></td>
+					</tr>
+
+				</table>
+			</div>
+			<fieldset>
+				<label>Show code:</label>
+				<input type="button" class="code-show-button" onClick="showCode('tables');"  value="Reveal" />
+			</fieldset>
+		</div>
+		<div id="definition-list" class="section">
+			<h1>Definition list</h1>
+			<p>Integer hendrerit, lorem sed semper feugiat, nibh leo sollicitudin neque, nec 
+			feugiat ex sem a ante. Mauris varius molestie quam, quis tempus lorem dictum at. 
+			Nullam ante enim, efficitur vehicula purus sit amet, blandit consectetur nunc. 
+			</p>
+			<div class="example">
+				<dl>
+					
+					<dt>div</td>
+					<dd>Section/container <i>block-level element</i></dd>	
+					<dt>p</dt>
+					<dd>Paragraph <i>block-level element</i></dd>	
+					<dt>b</td>
+					<dd>Bolden text <i>inline element</i></dd>	
+				</dl>
+			</div>
+			<fieldset>
+				<label>Show code:</label>
+				<input type="button" class="code-show-button" onClick="showCode('definition-list');" value="Reveal" />
+			</fieldset>
+		</div>
+	</body>
+</html>
