@@ -47,3 +47,20 @@ header nav li {
 #banner img {
 	width: 100%;
 }
+/* Media queries */
+@media screen and (max-width: 480px) {
+	#skipTo { 
+		display: block;
+	}
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px;
+		width: 100%;
+	}
+	header nav li {
+		display: block;
+		padding: 10px;
+		text-align: center;
+	}
+}
