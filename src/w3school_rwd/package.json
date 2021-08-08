@@ -1,0 +1,8 @@
+{
+	"scripts":{
+		"sass":"sass site/css/sass:site/css"
+	},
+  	"dependencies": {
+    		"sass": "^1.37.5"
+  	}
+}
