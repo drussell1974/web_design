@@ -1,0 +1,74 @@
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+img.align-left {
+  float: left;
+}
+
+img.inset {
+  margin: 0 0.75em 0.75em 0;
+}
+
+aside {
+  font-size: 0.9em;
+}
+
+.grid-container {
+  display: grid;
+  margin: 2.5em 2.5em 2.5em 2.5em;
+}
+.grid-container--two-one-layout {
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1.5em;
+}
+.grid-container--two-one-layout .main {
+  grid-column: 1;
+}
+.grid-container--two-one-layout .aside {
+  grid-column: 2/span 1;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5em;
+}
+
+[class*=preview-] {
+  margin: 1em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .preview {
+    grid-template-columns: auto;
+  }
+
+  .grid-container--two-one-layout {
+    grid-template-columns: auto;
+  }
+  .grid-container--two-one-layout .aside {
+    grid-column: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  border: none;
+  padding: 1em 1.5em;
+  background: gray;
+}
+.button-small {
+  padding: 0.5em 0.75em;
+}
+
+/*# sourceMappingURL=styles.css.map */
