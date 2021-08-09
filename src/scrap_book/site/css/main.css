@@ -1,0 +1,34 @@
+body {
+	color: #333;
+	font: 100%/1.5 Cambria, Georgia, serif;
+	background: #ece6d5 url('img/big-light.png') repeat;
+	margin: 0 auto;
+	padding: 1em 20%; /* temporary */
+}
+h1 {
+	color: #2c1c16;
+	font-family: 'Proxima Nova Bold', sans-serif;
+	font-weight: bold;
+	font-size: 1.75em; /* 28px; */
+	line-height: 1.1428; /* 32px - unit not required for line-height */
+	margin-top: 0.8571em; /* 24px */
+}
+.document {
+	padding-left: 5%; /* 16px / 320 = 0.05 */
+	padding-right: 5%; /* 16px / 320 = 0.05 */
+}
+ol.media {
+	list-style: none;
+	margin: 0;
+	clear: both;
+	overflow: hidden;
+}
+ol.media li.media-item {
+	background-color: #fff;
+	margin: 0 4.16666666667% 4.16666666667% 0; /* = (288/12)*100 */
+	width: 47.916666666667%; /* = (288/138)*100 */
+	float: left;
+}
+ol.media li.media-item:nth-child(2n) {
+	margin-right: 0;
+}

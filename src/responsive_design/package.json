@@ -1,0 +1,8 @@
+{
+	"scripts":{
+		"minify":"minify site/css/main.css > site/css/main.min.css"
+	},
+	"dependencies": {
+		"minify": "5.2.0"
+	}
+}

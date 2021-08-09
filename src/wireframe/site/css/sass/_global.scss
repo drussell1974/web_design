@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.button {
+	border: none;
+	padding: 1em 1.5em;
+	background: gray;
+	&-small {
+		padding: 0.5em 0.75em;
+	}
+}
